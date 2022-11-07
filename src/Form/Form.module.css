@@ -43,14 +43,15 @@ form {
 }
 
 .fild input {
-    height: 40px;
+    max-height: 40px;
 }
 
 .coment {
     display: flex;
     flex-direction: column;
     gap: 3px;
-    min-height: 65px;
+    height: 95px;
+    max-height: 95px;
 }
 
 .fild small, .coment small {
