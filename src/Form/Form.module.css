@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+.formulario{
+    background: rgb(46,44,44);
+    background: linear-gradient(90deg, rgba(63,136,197,1) 51%, rgba(174,246,199,1) 99%);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    color: white;
+}
+
+.formContainer {
+    background-color: rgb(46, 44, 44);
+    box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+    height: 400px;
+    width: 300px;
+    border-radius: 5px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    padding: 20px;
+    height: 100%;
+}
+
+.tituloForm{
+    display: flex;
+    justify-content: center;
+}
+
+.fild {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    height: 65px;
+}
+
+.fild input {
+    height: 40px;
+}
+
+.coment {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    min-height: 65px;
+}
+
+.fild small, .coment small {
+    color: red;
+}
+
+.coment textarea:focus, .fild input:focus{
+    outline: none;
+    border: 2px solid rgba(63,136,197,1);
+    border-radius: 5px;
+}
+
+.btnContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.btnContainer button{
+    height: 30px;
+    width: 90px;
+    margin-top: 5px;
+    background-color: rgba(63,136,197,1);
+    box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.45);
+    border: 0;
+    border-radius: 5px;
+    color: white;
+    transition: .5s;
+    opacity: .8;
+    cursor: pointer;
+}
+
+.btnContainer button:hover {
+    transform: scale(1.07);
+    opacity: 1;
+}
+
+.btnContainer button:active{
+    transform: scale(.98);
+}
