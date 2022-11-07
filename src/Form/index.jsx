@@ -3,8 +3,19 @@ import { useForm } from 'react-hook-form';
 import {yupResolver} from '@hookform/resolvers';
 import * as yup from 'yup';
 
+const schema = yup.object({
+    name: yup.string().required(),
+    email: yup.string().required(),
+    description: yup.string().required()
+});
+
 
 export default function Form(){
+
+    // const {register, handleSubmit, formState: { errors}} = useForm({
+    //     resolver: yupResolver(schema)
+    // })
+
     return(
         <>
             <section className={styles.formulario}>
