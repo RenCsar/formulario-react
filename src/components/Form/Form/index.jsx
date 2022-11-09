@@ -4,7 +4,6 @@ import {yupResolver} from '@hookform/resolvers/yup';
 import * as yup from 'yup';
 import {useState} from 'react';
 
-
 export default function Form(){
 
     const schema = yup.object({
@@ -13,8 +12,7 @@ export default function Form(){
         suggestion: yup.string().required("Não deixe esse campo vazio")
     });
 
-
-    const {register, handleSubmit, formState: { errors}} = useForm({
+    const {register, handleSubmit, formState: {errors}} = useForm({
         resolver: yupResolver(schema)
     });
 
@@ -32,7 +30,6 @@ export default function Form(){
         setModalState(true);
         window.location.reload();
     };
-
 
     return(
         <>
