@@ -25,7 +25,7 @@ Formulário desenvolvido através do React hook form com a validação feita com
 
 <hr>
 
-## ✅**Inicializando o Projeto**
+## **Inicializando o Projeto**
  
 1. **npm start**
 2. npm run backend - (para inicializar o json server);
