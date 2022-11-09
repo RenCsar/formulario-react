@@ -3,6 +3,7 @@ import { useForm } from 'react-hook-form';
 import {yupResolver} from '@hookform/resolvers/yup';
 import * as yup from 'yup';
 import {useState} from 'react';
+import axios from 'axios'
 
 export default function Form(){
 
@@ -17,6 +18,7 @@ export default function Form(){
     });
 
     const newSugestion = (data)=>{
+        axios.post('http://localhost:5000/sugestao', data);
         console.log(data);
         setModalState(false);
     };
