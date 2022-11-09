@@ -54,7 +54,7 @@ export default function Form(){
                         </div>
                         <div className={styles.coment}>
                             <label className={styles.label}>Opinião:</label>
-                            <textarea placeholder='Digi sua opinião aqui'{...register('suggestion')}/>
+                            <textarea placeholder='Digite sua opinião aqui'{...register('suggestion')}/>
                             <small>{errors.suggestion?.message}</small>
                         </div>
                         <div className={styles.btnContainer}>

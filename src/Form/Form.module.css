@@ -18,16 +18,16 @@ body {
 .formContainer {
     background-color: rgb(46, 44, 44);
     box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
-    height: 400px;
-    width: 300px;
+    height: 450px;
+    width: 350px;
     border-radius: 5px;
 }
 
 form {
     display: flex;
     flex-direction: column;
-    gap: 7px;
-    padding: 20px;
+    gap: 20px;
+    padding: 20px 35px;
     height: 100%;
     width: 100%;
 }
@@ -45,15 +45,21 @@ form {
 }
 
 .fild input {
-    max-height: 40px;
+    min-height: 25px;
 }
 
 .coment {
     display: flex;
     flex-direction: column;
-    gap: 3px;
+    gap: 5px;
     height: 95px;
     max-height: 95px;
+    max-width: 300px;
+}
+
+.coment textarea {
+    width: 100%;
+    max-width: 273px;
 }
 
 .fild small, .coment small {
@@ -74,7 +80,7 @@ form {
 .btnContainer button{
     height: 30px;
     width: 90px;
-    margin-top: 5px;
+    margin-top: 10px;
     background-color: rgba(63,136,197,1);
     box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.45);
     border: 0;
